@@ -25,3 +25,13 @@ Run each service locally and view at `http://localhost:PORT/api-docs`
 
 ## Error Handling
 All API error responses:
+{ "code": "ERR_TYPE", "message": "Details", "details": {} }
+
+## Environment Setup
+See `.env.example` for required config per service (DB, API keys, JWT secrets).
+
+## CI/CD
+Push triggers auto-build/test/deploy via GitHub Actions; see `.github/workflows/` in infra repo.
+
+## Testing
+`npm test` in each service runs integration/unit test suites.
